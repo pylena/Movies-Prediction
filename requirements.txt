@@ -2,5 +2,6 @@ fastapi
 pydantic
 scikit-learn
 uvicorn
-pickle
 streamlit_lottie
+streamlit
+joblib
