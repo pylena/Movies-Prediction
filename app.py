@@ -3,7 +3,7 @@ import streamlit as st
 
 
 select_movie = st.Page(
-    page="View/select_movie.py",
+    page="view/select_movie.py",
     title="Choose The movie",
     icon="🤔",
     default=True
@@ -12,7 +12,7 @@ select_movie = st.Page(
 
 
 recommended_movies = st.Page(
-    page="View/recommended_movies.py",
+    page="view/recommended_movies.py",
     title="Movies Recommended",
     icon="🎬",
     default=False
