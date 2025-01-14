@@ -1,15 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import numpy as np
-import pickle
+import joblib
 
 # Load the model and scaler
-with open('trained_pipeline_v1.pkl', 'rb') as f:
-    model = pickle.load(f)
-
-# Load the scaler
-with open('scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
+model = joblib.load('kmeans_model.joblib')
+scaler = joblib.load('scaler.joblib')
 
 app = FastAPI()
 
